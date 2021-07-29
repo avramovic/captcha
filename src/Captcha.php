@@ -301,7 +301,7 @@ class Captcha
             'sensitive' => $generator['sensitive'],
             'key' => $generator['key'],
             'img' => $this->image->encode('data-url')->encoded
-        ] : $this->image->response('png', $this->quality);
+        ] : $this->image->encode('png', $this->quality);
     }
 
     /**
